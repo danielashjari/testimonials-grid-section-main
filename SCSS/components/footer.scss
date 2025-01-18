@@ -1,0 +1,12 @@
+footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@use "../util/" as *;
+
+.box {
+    @include flex(column, stretch);
+    margin: 0;
+    padding: rem(25);
+    border-radius: rem(10);
+    box-shadow: 0 0 1rem 1px hsla(0, 0%, 0%, 0.452);
+    @include breakpoint-down(small){
+        min-width: rem(320);
+
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+
+    .header {
+        @include flex(row, center);
+        img {
+            margin: rem(10);
+            border-radius: 50%;
+        }
+    }
+}
+.box1 {
+    background-color: var(--bg-box1);
+    background-image: url("../../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.box2 {
+    background-color: var(--bg-box2);
+}
+.box3 {
+    background-color: var(--bg-box3);
+    h2,
+    h3 {
+        color: var(--h-white-bg);
+    }
+}
+.box4 {
+    background-color: var(--bg-box4);
+}
+.box5 {
+    background-color: var(--bg-box5);
+    h2,
+    h3 {
+        color: var(--h-white-bg);
+    }
+}

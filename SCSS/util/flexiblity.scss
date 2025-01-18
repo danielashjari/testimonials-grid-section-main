@@ -1,0 +1,15 @@
+@mixin grid-columns ($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+};
+
+@mixin flex($dirction, $align){
+    display: flex;
+    flex-direction: $dirction;
+    align-items: $align;
+}
+
+@function rem($pixels, $context: 16){
+    @return calc($pixels / $context)* 1rem;
+};
